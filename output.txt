@@ -1,0 +1,173 @@
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: test4 (226720 in chips)
+Seat 7: TartanianMM (43280 in chips)
+
+TartanianMM posts small blind 50
+test4 posts big blind 100
+Dealt to test4 [7d 3s]
+Dealt to TartanianMM [3d Kd]
+TartanianMM: raises 250 to 300
+test4: folds
+Seat 7: TartanianMM collected (100)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: TartanianMM (226720 in chips)
+Seat 7: test4 (43280 in chips)
+
+test4 posts small blind 50
+TartanianMM posts big blind 100
+Dealt to TartanianMM [3h 7d]
+Dealt to test4 [3s 9s]
+test4: raises 150 to 200
+TartanianMM: folds
+Seat 7: test4 collected (100)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: test4 (226720 in chips)
+Seat 7: TartanianMM (43280 in chips)
+
+TartanianMM posts small blind 50
+test4 posts big blind 100
+Dealt to test4 [3c Kd]
+Dealt to TartanianMM [Js 4c]
+TartanianMM: raises 150 to 200
+test4: calls 200
+*** FLOP *** [Qc 2c 8c]
+test4: bets 300
+TartanianMM: raises 300 to 600
+test4: folds
+Seat 7: TartanianMM collected (300)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: TartanianMM (226720 in chips)
+Seat 7: test4 (43280 in chips)
+
+test4 posts small blind 50
+TartanianMM posts big blind 100
+Dealt to TartanianMM [5c 7c]
+Dealt to test4 [2c 7s]
+test4: folds
+Seat 2: TartanianMM collected (50)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: test4 (226720 in chips)
+Seat 7: TartanianMM (43280 in chips)
+
+TartanianMM posts small blind 50
+test4 posts big blind 100
+Dealt to test4 [8h 8c]
+Dealt to TartanianMM [4c As]
+TartanianMM: raises 200 to 250
+test4: raises 350 to 600
+TartanianMM: calls 600
+*** FLOP *** [9h 9c Ah]
+test4: bets 900
+TartanianMM: raises 1350 to 2250
+test4: folds
+Seat 7: TartanianMM collected (900)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: TartanianMM (226720 in chips)
+Seat 7: test4 (43280 in chips)
+
+test4 posts small blind 50
+TartanianMM posts big blind 100
+Dealt to TartanianMM [8s Th]
+Dealt to test4 [6c 7h]
+test4: raises 350 to 400
+TartanianMM: calls 400
+*** FLOP *** [5s Kd 2c]
+TartanianMM: checks
+test4: bets 1000
+TartanianMM: folds
+Seat 7: test4 collected (400)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: test4 (226720 in chips)
+Seat 7: TartanianMM (43280 in chips)
+
+TartanianMM posts small blind 50
+test4 posts big blind 100
+Dealt to test4 [Th 8c]
+Dealt to TartanianMM [6s 3h]
+TartanianMM: folds
+Seat 2: test4 collected (50)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: TartanianMM (226720 in chips)
+Seat 7: test4 (43280 in chips)
+
+test4 posts small blind 50
+TartanianMM posts big blind 100
+Dealt to TartanianMM [Tc 2d]
+Dealt to test4 [Qs 8d]
+test4: folds
+Seat 2: TartanianMM collected (50)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: test4 (226720 in chips)
+Seat 7: TartanianMM (43280 in chips)
+
+TartanianMM posts small blind 50
+test4 posts big blind 100
+Dealt to test4 [Jh Tc]
+Dealt to TartanianMM [6s 7h]
+TartanianMM: raises 150 to 200
+test4: raises 400 to 600
+TartanianMM: calls 600
+*** FLOP *** [Ks Kd Qc]
+test4: checks
+TartanianMM: checks
+*** TURN *** [Ks Kd Qc] [2s]
+test4: bets 1500
+TartanianMM: folds
+Seat 2: test4 collected (600)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: TartanianMM (226720 in chips)
+Seat 7: test4 (43280 in chips)
+
+test4 posts small blind 50
+TartanianMM posts big blind 100
+Dealt to TartanianMM [Jd 3s]
+Dealt to test4 [3h Kh]
+test4: calls 50
+TartanianMM: checks
+*** FLOP *** [Qh Jc Js]
+TartanianMM: checks
+test4: bets 250
+TartanianMM: calls 250
+*** TURN *** [Qh Jc Js] [6d]
+TartanianMM: checks
+test4: bets 850
+TartanianMM: calls 850
+*** RIVER *** [Qh Jc Js 6d] [8s]
+TartanianMM: checks
+Seat 2: TartanianMM collected (850)
+
+PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
+Table '284245586 5' 9-max Seat #7 is the button
+Seat 2: test4 (226720 in chips)
+Seat 7: TartanianMM (43280 in chips)
+
+TartanianMM posts small blind 50
+test4 posts big blind 100
+Dealt to test4 [Qc 9c]
+Dealt to TartanianMM [Ad 7h]
+TartanianMM: raises 200 to 250
+test4: calls 250
+*** FLOP *** [Jd Ah 7s]
+test4: checks
+TartanianMM: bets 375
+test4: folds
+Seat 7: TartanianMM collected (250)

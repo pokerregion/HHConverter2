@@ -1,0 +1,11 @@
+STATE:0:r300f:7d3s|3dKd:-100|100:test4|TartanianMM
+STATE:1:r200f:3h7d|3s9s:-100|100:TartanianMM|test4
+STATE:2:r200c/r300r600f:3cKd|Js4c/Qc2c8c:-300|300:test4|TartanianMM
+STATE:3:f:5c7c|2c7s:50|-50:TartanianMM|test4
+STATE:4:r250r600c/r900r2250f:8h8c|4cAs/9h9cAh:-900|900:test4|TartanianMM
+STATE:5:r400c/cr1000f:8sTh|6c7h/5sKd2c:-400|400:TartanianMM|test4
+STATE:6:f:Th8c|6s3h:50|-50:test4|TartanianMM
+STATE:7:f:Tc2d|Qs8d:50|-50:TartanianMM|test4
+STATE:8:r200r600c/cc/r1500f:JhTc|6s7h/KsKdQc/2s:600|-600:test4|TartanianMM
+STATE:9:cc/cr250c/cr850c/cc:Jd3s|3hKh/QhJcJs/6d/8s:850|-850:TartanianMM|test4
+STATE:10:r250c/cr375f:Qc9c|Ad7h/JdAh7s:-250|250:test4|TartanianMM
