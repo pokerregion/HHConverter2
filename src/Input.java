@@ -52,7 +52,7 @@ public class Input {
 		}
 
 		// other information contained in hand string
-		String[] changesInStack = chunks[3].split("\\|");
+		String netChipResults = chunks[3];
 		String[] playerNames = chunks[4].split("\\|");
 
 		// set player hands
@@ -63,16 +63,9 @@ public class Input {
 		String player1Name = playerNames[0];
 		String player2Name = playerNames[1];
 
-		//set changes in stack size
-		String player1ChangeInStack = changesInStack[0];
-		String player2ChangeInStack = changesInStack[1];
-
 		Player player1 = new Player(player1Name, false, player1Hand);
 		Player player2 = new Player(player2Name, true, player2Hand);
 
-		player1.setChangeInStack(Integer.parseInt(player1ChangeInStack));
-		player2.setChangeInStack(Integer.parseInt(player2ChangeInStack));
-		
 		ArrayList<ArrayList<Action>> preflopActions = getActions(
 				arrayOfPreflopActions, 1);
 		player1.setPreflopActions(preflopActions.get(0));
@@ -92,7 +85,7 @@ public class Input {
 					ArrayList<ArrayList<Action>> riverActions = getActions(
 							convertStringIntoStringActions(allActions[3]), 0);
 					player1.setRiverActions(riverActions.get(0));
-					player1.setRiverActions(riverActions.get(1));
+					player2.setRiverActions(riverActions.get(1));
 				}
 			}
 		}
@@ -115,11 +108,15 @@ public class Input {
 	private ArrayList<ArrayList<Action>> getActions(List<String> actions,
 			int firstPlayer) {
 		ArrayList<ArrayList<Action>> actionsByPlayer = new ArrayList<>();
-		actionsByPlayer.add(new ArrayList<Action>());
-		actionsByPlayer.add(new ArrayList<Action>());
+		actionsByPlayer.add(new ArrayList<>());
+		actionsByPlayer.add(new ArrayList<>());
 		int currentPlayer = firstPlayer;
 		String previousAction = firstPlayer == 0 ? "" : "r";
-		int previousAmount = firstPlayer == 0 ? 100 : 50;
+		int[] playerCoins = new int[2];
+		if (firstPlayer == 1) {
+			playerCoins[firstPlayer] = 50;
+			playerCoins[1 - firstPlayer] = 100;
+		}
 		for (String action : actions) {
 			if (action.startsWith("f")) {
 				actionsByPlayer.get(currentPlayer).add(new Action("fold", 0));
@@ -130,23 +127,30 @@ public class Input {
 							new Action("check", 0));
 					previousAction = "c";
 				} else {
-					previousAmount = Integer.parseInt(action.substring(1));
+					int amount = Integer.parseInt(action.substring(1));
 					actionsByPlayer.get(currentPlayer).add(
-							new Action("bet", previousAmount));
+							new Action("bet", amount));
+					playerCoins[currentPlayer] += amount;
 					previousAction = "r";
 				}
 			} else if (previousAction.equals("r")) {
 				if (action.startsWith("c")) {
 					actionsByPlayer.get(currentPlayer).add(
-							new Action("call", previousAmount));
+							new Action("call", playerCoins[1 - currentPlayer]
+									- playerCoins[currentPlayer]));
 					previousAction = "c";
+					playerCoins[currentPlayer] = playerCoins[1 - currentPlayer];
 				} else {
-					int minusAmount = previousAmount;
-					previousAmount = Integer.parseInt(action.substring(1));
-					actionsByPlayer.get(currentPlayer).add(
-							new Action("raise", previousAmount - minusAmount,
-									previousAmount));
+					int amount = Integer.parseInt(action.substring(1));
+					actionsByPlayer
+							.get(currentPlayer)
+							.add(new Action(
+									"raise",
+									amount
+											- (playerCoins[1 - currentPlayer] - playerCoins[currentPlayer]),
+									amount));
 					previousAction = "r";
+					playerCoins[currentPlayer] = amount;
 				}
 			}
 			currentPlayer = 1 - currentPlayer;

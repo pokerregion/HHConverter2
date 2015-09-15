@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HandHistoryConverter {
 
-	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #7 is the button%nSeat 2: %s (20000 in chips)%nSeat 7: %s (20000 in chips)%n";
+	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #%d is the button%nSeat 2: %s (226720 in chips)%nSeat 7: %s (43280 in chips)%n%n";
 
 	public static void main(String[] args) throws IOException {
 		File inputFile = new File("input.txt");
@@ -16,6 +16,10 @@ public class HandHistoryConverter {
 		File outputFile = new File("output.txt");
 		BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 
+		Player player1 = null;
+		Player player2 = null;
+		int buttonSeat = 7;
+
 		// while there's another hand
 		while (reader.hasNextLine()) {
 			// read in hand
@@ -23,11 +27,17 @@ public class HandHistoryConverter {
 			Input newHand = new Input(line);
 			// set attributes
 			HandHistory handHistory = newHand.createHandHistory();
+			if (player1 == null && player2 == null) {
+				player1 = handHistory.getPlayer1();
+				player2 = handHistory.getPlayer2();
+			}
 			// write to output file
-			writeHandToOutputFile(handHistory, writer);
+			writeHandToOutputFile(handHistory, writer, player1, player2,
+					buttonSeat);
 			if (reader.hasNextLine()) {
 				writer.newLine();
 			}
+			buttonSeat = buttonSeat == 7 ? 2 : 7;
 		}
 
 		writer.flush();
@@ -36,19 +46,23 @@ public class HandHistoryConverter {
 	}
 
 	public static void writeHandToOutputFile(HandHistory handHistory,
-			BufferedWriter writer) throws IOException {
+			BufferedWriter writer, Player player1Seat, Player player2Seat,
+			int buttonSeat) throws IOException {
 
 		Player player1 = handHistory.getPlayer1();
 		Player player2 = handHistory.getPlayer2();
 		Dealer dealer = handHistory.getDealer();
 
-		if (player1.getIsDealer()) {
-			writer.write(String.format(HEADER, player2.getName(),
-					player1.getName()));
-		} else {
-			writer.write(String.format(HEADER, player1.getName(),
-					player2.getName()));
-		}
+		writer.write(String.format(HEADER, buttonSeat, player1Seat.getName(),
+				player2Seat.getName()));
+
+		// if (player1.getIsDealer()) {
+		// writer.write(String.format(HEADER, player2.getName(),
+		// player1.getName()));
+		// } else {
+		// writer.write(String.format(HEADER, player1.getName(),
+		// player2.getName()));
+		// }
 		// print starting information (table specific)
 		// print seats and chip stacks
 		// print blind postings
@@ -89,7 +103,6 @@ public class HandHistoryConverter {
 				}
 			}
 		}
-		writeChangeInStackSummary(player1, player2, writer);
 	}
 
 	public static void writeBlind(Player player, BufferedWriter writer)
@@ -299,17 +312,6 @@ public class HandHistoryConverter {
 		}
 	}
 
-	public static void writeChangeInStackSummary(Player player1, Player player2, BufferedWriter writer) throws IOException {
-		if (player1.getChangeInStack() > 0) {
-			
-			String seat = player1.getIsDealer() ? "Seat 7: " : "Seat 2: ";
-			writer.write(seat + player1.getName() + " collected (" + player1.getChangeInStack() + ")\n");
-		} else {
-			String seat = player2.getIsDealer() ? "Seat 7: " : "Seat 2: ";
-			writer.write(seat + player2.getName() + " collected (" + player2.getChangeInStack() + ")\n");
-		}
-	}
-	
 	// functions for writing a line for each of fold, check, call, all-in call,
 	// bet, all-in bet, raise, all-in raise
 
