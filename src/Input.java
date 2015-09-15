@@ -52,7 +52,7 @@ public class Input {
 		}
 
 		// other information contained in hand string
-		String netChipResults = chunks[3];
+		String[] changesInStack = chunks[3].split("\\|");
 		String[] playerNames = chunks[4].split("\\|");
 
 		// set player hands
@@ -62,9 +62,16 @@ public class Input {
 		// set player names
 		String player1Name = playerNames[0];
 		String player2Name = playerNames[1];
+		
+		//set changes in stack
+		int player1ChangeInStack = Integer.parseInt(changesInStack[0]);
+		int player2ChangeInStack = Integer.parseInt(changesInStack[1]);
 
 		Player player1 = new Player(player1Name, false, player1Hand);
 		Player player2 = new Player(player2Name, true, player2Hand);
+		
+		player1.setChangeInStack(player1ChangeInStack);
+		player2.setChangeInStack(player2ChangeInStack);
 
 		ArrayList<ArrayList<Action>> preflopActions = getActions(
 				arrayOfPreflopActions, 1);
@@ -108,8 +115,8 @@ public class Input {
 	private ArrayList<ArrayList<Action>> getActions(List<String> actions,
 			int firstPlayer) {
 		ArrayList<ArrayList<Action>> actionsByPlayer = new ArrayList<>();
-		actionsByPlayer.add(new ArrayList<>());
-		actionsByPlayer.add(new ArrayList<>());
+		actionsByPlayer.add(new ArrayList<Action>());
+		actionsByPlayer.add(new ArrayList<Action>());
 		int currentPlayer = firstPlayer;
 		String previousAction = firstPlayer == 0 ? "" : "r";
 		int[] playerCoins = new int[2];

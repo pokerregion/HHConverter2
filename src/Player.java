@@ -6,7 +6,7 @@ public class Player {
 
 	private String name;
 	private boolean isDealer;
-	private int stackSize;
+	private int changeInStack;
 	private String holeCards;
 	private int currentBet;
 	private ArrayList<Action> preflopActions;
@@ -29,11 +29,6 @@ public class Player {
 		riverActions = new ArrayList<>();
 	}
 
-	public Player(String name, boolean isDealer, int stackSize, String holeCards) {
-		this(name, isDealer, holeCards);
-		setStackSize(stackSize);
-	}
-
 	public String getName() {
 		return this.name;
 	}
@@ -50,16 +45,12 @@ public class Player {
 		this.isDealer = isDealer;
 	}
 
-	public int getStackSize() {
-		return this.stackSize;
+	public int getChangeInStack() {
+		return this.changeInStack;
 	}
 
-	public void setStackSize(int stackSize) {
-		this.stackSize = stackSize;
-	}
-
-	public void changeStackSize(int amountToChange) {
-		setStackSize(this.stackSize + amountToChange);
+	public void setChangeInStack(int changeInStack) {
+		this.changeInStack = changeInStack;
 	}
 
 	public int getCurrentBet() {

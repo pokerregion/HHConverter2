@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HandHistoryConverter {
 
-	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #%d is the button%nSeat 2: %s (226720 in chips)%nSeat 7: %s (43280 in chips)%n%n";
+	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #%d is the button%nSeat 2: %s (20000 in chips)%nSeat 7: %s (20000 in chips)%n";
 
 	public static void main(String[] args) throws IOException {
 		File inputFile = new File("input.txt");
@@ -98,13 +98,23 @@ public class HandHistoryConverter {
 					writeActions(player1, player1.getRiverActions(), player2,
 							player2.getRiverActions(), false, writer);
 					// writeRiverAction(player1, player2, writer);
-					// print showdown
-					// print summary
+					
 				}
 			}
 		}
+		// write change in stack for winner of hand
+		writeChangeInStackSummary(player1, player2, writer);
 	}
 
+	public static void writeChangeInStackSummary(Player player1, Player player2, BufferedWriter writer) throws IOException {
+		writer.write("*** SHOW DOWN ***\n");
+		if (player1.getChangeInStack() > 0) {
+			writer.write(player1.getName() + " collected " + player1.getChangeInStack() + " from pot\n");
+		} else {
+			writer.write(player2.getName() + " collected " + player2.getChangeInStack() + " from pot\n");
+		}
+	}
+	
 	public static void writeBlind(Player player, BufferedWriter writer)
 			throws IOException {
 		int bet = player.getCurrentBet();
