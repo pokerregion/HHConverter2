@@ -1,8 +1,7 @@
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: test4 (226720 in chips)
-Seat 7: TartanianMM (43280 in chips)
-
+Seat 2: test4 (20000 in chips)
+Seat 7: TartanianMM (20000 in chips)
 TartanianMM posts small blind 50
 test4 posts big blind 100
 Dealt to test4 [7d 3s]
@@ -13,9 +12,8 @@ Seat 7: TartanianMM collected (100)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: TartanianMM (226720 in chips)
-Seat 7: test4 (43280 in chips)
-
+Seat 2: TartanianMM (20000 in chips)
+Seat 7: test4 (20000 in chips)
 test4 posts small blind 50
 TartanianMM posts big blind 100
 Dealt to TartanianMM [3h 7d]
@@ -26,9 +24,8 @@ Seat 7: test4 collected (100)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: test4 (226720 in chips)
-Seat 7: TartanianMM (43280 in chips)
-
+Seat 2: test4 (20000 in chips)
+Seat 7: TartanianMM (20000 in chips)
 TartanianMM posts small blind 50
 test4 posts big blind 100
 Dealt to test4 [3c Kd]
@@ -43,9 +40,8 @@ Seat 7: TartanianMM collected (300)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: TartanianMM (226720 in chips)
-Seat 7: test4 (43280 in chips)
-
+Seat 2: TartanianMM (20000 in chips)
+Seat 7: test4 (20000 in chips)
 test4 posts small blind 50
 TartanianMM posts big blind 100
 Dealt to TartanianMM [5c 7c]
@@ -55,9 +51,8 @@ Seat 2: TartanianMM collected (50)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: test4 (226720 in chips)
-Seat 7: TartanianMM (43280 in chips)
-
+Seat 2: test4 (20000 in chips)
+Seat 7: TartanianMM (20000 in chips)
 TartanianMM posts small blind 50
 test4 posts big blind 100
 Dealt to test4 [8h 8c]
@@ -73,9 +68,8 @@ Seat 7: TartanianMM collected (900)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: TartanianMM (226720 in chips)
-Seat 7: test4 (43280 in chips)
-
+Seat 2: TartanianMM (20000 in chips)
+Seat 7: test4 (20000 in chips)
 test4 posts small blind 50
 TartanianMM posts big blind 100
 Dealt to TartanianMM [8s Th]
@@ -90,9 +84,8 @@ Seat 7: test4 collected (400)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: test4 (226720 in chips)
-Seat 7: TartanianMM (43280 in chips)
-
+Seat 2: test4 (20000 in chips)
+Seat 7: TartanianMM (20000 in chips)
 TartanianMM posts small blind 50
 test4 posts big blind 100
 Dealt to test4 [Th 8c]
@@ -102,9 +95,8 @@ Seat 2: test4 collected (50)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: TartanianMM (226720 in chips)
-Seat 7: test4 (43280 in chips)
-
+Seat 2: TartanianMM (20000 in chips)
+Seat 7: test4 (20000 in chips)
 test4 posts small blind 50
 TartanianMM posts big blind 100
 Dealt to TartanianMM [Tc 2d]
@@ -114,9 +106,8 @@ Seat 2: TartanianMM collected (50)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: test4 (226720 in chips)
-Seat 7: TartanianMM (43280 in chips)
-
+Seat 2: test4 (20000 in chips)
+Seat 7: TartanianMM (20000 in chips)
 TartanianMM posts small blind 50
 test4 posts big blind 100
 Dealt to test4 [Jh Tc]
@@ -134,9 +125,8 @@ Seat 2: test4 collected (600)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: TartanianMM (226720 in chips)
-Seat 7: test4 (43280 in chips)
-
+Seat 2: TartanianMM (20000 in chips)
+Seat 7: test4 (20000 in chips)
 test4 posts small blind 50
 TartanianMM posts big blind 100
 Dealt to TartanianMM [Jd 3s]
@@ -157,9 +147,8 @@ Seat 2: TartanianMM collected (850)
 
 PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]
 Table '284245586 5' 9-max Seat #7 is the button
-Seat 2: test4 (226720 in chips)
-Seat 7: TartanianMM (43280 in chips)
-
+Seat 2: test4 (20000 in chips)
+Seat 7: TartanianMM (20000 in chips)
 TartanianMM posts small blind 50
 test4 posts big blind 100
 Dealt to test4 [Qc 9c]

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HandHistoryConverter {
 
-	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #7 is the button%nSeat 2: %s (226720 in chips)%nSeat 7: %s (43280 in chips)%n%n";
+	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #7 is the button%nSeat 2: %s (20000 in chips)%nSeat 7: %s (20000 in chips)%n";
 
 	public static void main(String[] args) throws IOException {
 		File inputFile = new File("input.txt");
