@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 public class Input {
 
+	//basic regex for handling individual player action (e.g. r500)
 	private static final Pattern ACTION_PATTERN = Pattern
 			.compile("([cf])|(r[1-9]+[0-9]*)");
 
@@ -73,21 +74,25 @@ public class Input {
 		player1.setChangeInStack(player1ChangeInStack);
 		player2.setChangeInStack(player2ChangeInStack);
 
+		//handles preflop actions
 		ArrayList<ArrayList<Action>> preflopActions = getActions(
 				arrayOfPreflopActions, 1);
 		player1.setPreflopActions(preflopActions.get(0));
 		player2.setPreflopActions(preflopActions.get(1));
 
+		//hand makes it to the flop
 		if (allActions.length > 1) {
 			ArrayList<ArrayList<Action>> flopActions = getActions(
 					convertStringIntoStringActions(allActions[1]), 0);
 			player1.setFlopActions(flopActions.get(0));
 			player2.setFlopActions(flopActions.get(1));
+			//hand makes it to the turn
 			if (allActions.length > 2) {
 				ArrayList<ArrayList<Action>> turnActions = getActions(
 						convertStringIntoStringActions(allActions[2]), 0);
 				player1.setTurnActions(turnActions.get(0));
 				player2.setTurnActions(turnActions.get(1));
+				//hand makes it to the river
 				if (allActions.length > 3) {
 					ArrayList<ArrayList<Action>> riverActions = getActions(
 							convertStringIntoStringActions(allActions[3]), 0);
@@ -125,9 +130,11 @@ public class Input {
 			playerCoins[1 - firstPlayer] = 100;
 		}
 		for (String action : actions) {
+			//if player's action is a fold, hand ends immediately
 			if (action.startsWith("f")) {
 				actionsByPlayer.get(currentPlayer).add(new Action("fold", 0));
 				break;
+			//if this is the first action in the arrayList or the previous action was a call or check
 			} else if (previousAction.isEmpty() || previousAction.equals("c")) {
 				if (action.startsWith("c")) {
 					actionsByPlayer.get(currentPlayer).add(
@@ -140,26 +147,27 @@ public class Input {
 					playerCoins[currentPlayer] += amount;
 					previousAction = "r";
 				}
+				//if action before this one was a raise
 			} else if (previousAction.equals("r")) {
+				//if action starts with c, it must be a call
 				if (action.startsWith("c")) {
 					actionsByPlayer.get(currentPlayer).add(
 							new Action("call", playerCoins[1 - currentPlayer]
 									- playerCoins[currentPlayer]));
 					previousAction = "c";
 					playerCoins[currentPlayer] = playerCoins[1 - currentPlayer];
+				/*given that there *is* an action, the only other possibility is that it's r (if previous action was a raise, and there's another action
+					that's not a call, it must be a raise*/
 				} else {
 					int amount = Integer.parseInt(action.substring(1));
 					actionsByPlayer
 							.get(currentPlayer)
-							.add(new Action(
-									"raise",
-									amount
-											- (playerCoins[1 - currentPlayer] - playerCoins[currentPlayer]),
-									amount));
+							.add(new Action("raise", amount - (playerCoins[1 - currentPlayer] - playerCoins[currentPlayer]), amount));
 					previousAction = "r";
 					playerCoins[currentPlayer] = amount;
 				}
 			}
+			//change current player (1 to 0, 0 to 1)
 			currentPlayer = 1 - currentPlayer;
 		}
 		return actionsByPlayer;

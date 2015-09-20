@@ -17,6 +17,8 @@ public class Action {
 		setTotalRaiseAmount(totalRaiseAmount);
 	}
 	
+	//getters and setters for Action object
+	
 	public String getAction() {
 		return this.action;
 	}
@@ -40,6 +42,4 @@ public class Action {
 	public void setTotalRaiseAmount(int totalRaiseAmount) {
 		this.totalRaiseAmount = totalRaiseAmount;
 	}
-	
-	
 }

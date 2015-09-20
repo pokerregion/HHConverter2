@@ -4,12 +4,15 @@ public class HandHistory {
 	private Dealer dealer;
 	private int handNumber;
 	
+	//parameterless constructor for HandHistory object
 	HandHistory() {
 		setPlayer1(null);
 		setPlayer2(null);
 		setDealer(null);
 		setHandNumber(-1);
 	}
+	
+	//getters and setters for HandHistory fields
 	
 	public Player getPlayer1() {
 		return this.player1;

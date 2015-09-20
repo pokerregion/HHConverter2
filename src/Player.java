@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Player {
+	//constants
 	public static final int SMALL_BLIND = 50;
 	public static final int BIG_BLIND = 100;
 
@@ -14,6 +15,7 @@ public class Player {
 	private ArrayList<Action> turnActions;
 	private ArrayList<Action> riverActions;
 
+	//Player constructor
 	public Player(String name, boolean isDealer, String holeCards) {
 		setName(name);
 		setIsDealer(isDealer);
@@ -29,6 +31,8 @@ public class Player {
 		riverActions = new ArrayList<>();
 	}
 
+	//getters and setters for Player fields
+	
 	public String getName() {
 		return this.name;
 	}

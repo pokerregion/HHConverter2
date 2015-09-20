@@ -3,12 +3,15 @@ public class Dealer {
 	private String turn;
 	private String river;
 
+	//basic constructor for Dealer object
 	public Dealer(String[] flop, String turn, String river) {
 		setFlop(flop);
 		setTurn(turn);
 		setRiver(river);
 	}
 
+	//basic getters / setters for dealer object
+	
 	public String[] getFlop() {
 		return this.flop;
 	}
