@@ -103,6 +103,9 @@ public class HandHistoryConverter {
 	//summary line about collecting x from pot (mostly for Holdem Manager)
 	public static void writeChangeInStackSummary(Player player1, Player player2, BufferedWriter writer) throws IOException {
 		writer.write("*** SHOW DOWN ***\n");
+		
+		writer.write(player1.getName() + ": shows [" + player1.getHoleCards().substring(0, 2) + " " + player1.getHoleCards().substring(2,4) + "] ()\n");
+		writer.write(player2.getName() + ": shows [" + player2.getHoleCards().substring(0, 2) + " " + player1.getHoleCards().substring(2,4) + "] ()\n");
 		if (player1.getChangeInStack() > 0) {
 			writer.write(player1.getName() + " collected " + player1.getChangeInStack() + " from pot\n");
 		} else {
