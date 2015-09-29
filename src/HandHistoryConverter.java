@@ -17,8 +17,7 @@ public class HandHistoryConverter {
 		Scanner reader = new Scanner(inputFile);
 
 		//create output file
-		String modifiedInputString = inputString.substring(0, inputString.length() - 4);
-		String outputString = modifiedInputString + "Output.txt";
+		String outputString = inputString + "Output.txt";
 		File outputFile = new File(outputString);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 
