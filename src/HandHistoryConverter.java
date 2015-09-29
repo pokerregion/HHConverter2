@@ -9,11 +9,17 @@ public class HandHistoryConverter {
 
 	private static final String HEADER = "PokerStars Game #45715290124: Tournament #284245586, $2.00+$0.20 USD Hold'em No Limit - Level XIX (50/100) - 2010/06/19 16:32:38 WET [2010/06/19 11:32:38 ET]\nTable '284245586 5' 9-max Seat #%d is the button%nSeat 2: %s (20000 in chips)%nSeat 7: %s (20000 in chips)%n";
 
-	public static void main(String[] args) throws IOException {
-		File inputFile = new File("input.txt");
+	public static void main(String[] args) throws IOException { 
+		
+		//dynamically get input file name from user
+		String inputString = getInputString();
+		File inputFile = new File(inputString);
 		Scanner reader = new Scanner(inputFile);
 
-		File outputFile = new File("output.txt");
+		//create output file
+		String modifiedInputString = inputString.substring(0, inputString.length() - 4);
+		String outputString = modifiedInputString + "Output.txt";
+		File outputFile = new File(outputString);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
 
 		Player player1 = null;
@@ -24,6 +30,10 @@ public class HandHistoryConverter {
 		while (reader.hasNextLine()) {
 			// read in hand
 			String line = reader.nextLine();
+			//skip non-hand lines
+			if (!line.startsWith("STATE")) {
+				continue;
+			}
 			Input newHand = new Input(line);
 			// set attributes
 			HandHistory handHistory = newHand.createHandHistory();
@@ -43,6 +53,14 @@ public class HandHistoryConverter {
 		writer.flush();
 
 		reader.close();
+	}
+	
+	public static String getInputString() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter input file name (including extension)");
+		String inputString = input.nextLine();
+		input.close();
+		return inputString;
 	}
 
 	public static void writeHandToOutputFile(HandHistory handHistory,
@@ -103,9 +121,16 @@ public class HandHistoryConverter {
 	//summary line about collecting x from pot (mostly for Holdem Manager)
 	public static void writeChangeInStackSummary(Player player1, Player player2, BufferedWriter writer) throws IOException {
 		writer.write("*** SHOW DOWN ***\n");
-		
+		writeCardsShowdown(player1, writer);
+		writeCardsShowdown(player2, writer);
+		writeChangeInStack(player1, player2, writer);
+	}
+	
+	public static void writeCardsShowdown(Player player1, BufferedWriter writer) throws IOException {
 		writer.write(player1.getName() + ": shows [" + player1.getHoleCards().substring(0, 2) + " " + player1.getHoleCards().substring(2,4) + "] ()\n");
-		writer.write(player2.getName() + ": shows [" + player2.getHoleCards().substring(0, 2) + " " + player1.getHoleCards().substring(2,4) + "] ()\n");
+	}
+	
+	public static void writeChangeInStack(Player player1, Player player2, BufferedWriter writer) throws IOException {
 		if (player1.getChangeInStack() > 0) {
 			writer.write(player1.getName() + " collected " + player1.getChangeInStack() + " from pot\n");
 		} else {
